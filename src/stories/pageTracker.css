@@ -1,0 +1,20 @@
+.page-tracker{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+    justify-content: space-between;
+    height: 3em;
+}
+
+.page-tracker--steper{
+    display: flex;
+    background-color: dimgray;
+    border: 2px solid white;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-tracker--stepper--step{
+    color: white;
+}

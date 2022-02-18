@@ -9,7 +9,7 @@ export default {
 export const Default = (args) => {
     return (
         <div>
-            <PageTracker steps={6}/>
+            <PageTracker />
         </div>
     )
 }
