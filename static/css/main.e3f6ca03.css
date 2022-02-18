@@ -126,5 +126,25 @@ section .tip-wrapper svg path {
   fill: #1ea7fd;
 }
 
+.page-tracker{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+    justify-content: space-between;
+    height: 3em;
+}
 
-/*# sourceMappingURL=main.a53f3d8e.css.map*/
+.page-tracker--steper{
+    display: flex;
+    background-color: dimgray;
+    border: 2px solid white;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-tracker--stepper--step{
+    color: white;
+}
+
+/*# sourceMappingURL=main.e3f6ca03.css.map*/
