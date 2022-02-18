@@ -141,10 +141,15 @@ section .tip-wrapper svg path {
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.page-tracker--steper:hover{
+    opacity: .8;
 }
 
 .page-tracker--stepper--step{
     color: white;
 }
 
-/*# sourceMappingURL=main.e3f6ca03.css.map*/
+/*# sourceMappingURL=main.0cad31b6.css.map*/
