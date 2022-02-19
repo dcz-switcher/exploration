@@ -8,7 +8,7 @@
 
 .page-tracker--steper{
     display: flex;
-    background-color: dimgray;
+    background-color: #0A2D82;
     border: 2px solid white;
     flex-grow: 1;
     justify-content: center;
@@ -22,4 +22,5 @@
 
 .page-tracker--stepper--step{
     color: white;
+    font-family: Montserrat, sans-serif;
 }

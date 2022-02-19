@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import './pageTracker.css';
 
 
+/**
+ * > Module de visualisation et de gestion de l'avancement dans un tunnel à plusieurs étapes
+ */
+export const PageTracker = ({count, current}) => {
 
-export const PageTracker = ({steps}) => {
-
-    const stepElements = [...Array(steps)].map((e, i) =>
+    const stepElements = [...Array(count)].map((e, i) =>
         <div className="page-tracker--steper">
             <span className="page-tracker--stepper--step">{i+1}</span>
         </div>
@@ -20,9 +22,11 @@ export const PageTracker = ({steps}) => {
 };
 
 PageTracker.propTypes = {
-    steps: PropTypes.number
+    count: PropTypes.number,
+    current: PropTypes.number
 }
 
 PageTracker.defaultProps = {
-    steps: 3
+    count: 3,
+    current: 0
 };

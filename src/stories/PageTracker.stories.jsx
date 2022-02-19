@@ -6,10 +6,21 @@ export default {
     component: PageTracker
 }
 
+const Template = (args) => <PageTracker {...args} />;
+
+export const Default = Template.bind({})
+Default.args = {
+    count: 4,
+    current: 1,
+}
+
+
+/*
 export const Default = (args) => {
     return (
         <div>
-            <PageTracker />
+            <PageTracker count={2}/>
         </div>
     )
 }
+*/
