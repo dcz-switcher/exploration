@@ -8,10 +8,11 @@ import './pageTracker.css';
  */
 export const PageTracker = ({count, current}) => {
 
-    const stepElements = [...Array(count)].map((e, i) =>
-        <div className="page-tracker--steper">
-            <span className="page-tracker--stepper--step">{i+1}</span>
-        </div>
+    const stepElements = [...Array(count)].map((e, i) => 
+            <div key={i} className="page-tracker--steper">
+                <div className={"page-tracker--steper--status " + ( (i < current) ? 'active' : '') }></div>
+                <span className="page-tracker--stepper--step">{i+1}</span>
+            </div>
     )
 
     return (

@@ -9,11 +9,11 @@
 .page-tracker--steper{
     display: flex;
     background-color: #0A2D82;
-    border: 2px solid white;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 
 .page-tracker--steper:hover{
@@ -23,4 +23,18 @@
 .page-tracker--stepper--step{
     color: white;
     font-family: Montserrat, sans-serif;
+}
+
+.page-tracker--steper--status{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: .3em;
+    background-color: #D3D62E;
+    display: none;
+}
+
+.page-tracker--steper--status.active{
+    display: block;
 }
