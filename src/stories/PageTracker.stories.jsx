@@ -2,7 +2,7 @@ import { PageTracker } from "./PageTracker"
 
 
 export default {
-    title: "UI/Page tracker",
+    title: "MODULES/Page tracker",
     component: PageTracker
 }
 
