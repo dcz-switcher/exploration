@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { Stepbar } from './stories/Stepbar';
+
 function App() {
   return (
+    /*
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,6 +22,10 @@ function App() {
         </a>
       </header>
     </div>
+    */
+   <div>
+     <Stepbar sections={["etape 1", "Etape 2", "Etape 3"]} activeIndex={1} />
+   </div>
   );
 }
 
